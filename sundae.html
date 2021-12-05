@@ -1,0 +1,724 @@
+<html>
+	<head>
+		<title>Sundae | ICY-HOT Ice Cream</title>
+		<style type="text/css">
+			body{
+				margin: 0;
+			}
+			a{
+				
+				text-decoration: none;
+				color:#000;
+			}
+			#main{
+				width: 1519px;
+				height: auto;
+				background:url('snow.png') hsl(97, 31%, 58%);
+			}
+			#top{
+				width: 1519px;
+				height: 100px;
+				background: #111111;
+				position: sticky;
+				top: 0;
+				z-index: 1000;
+				}
+				#logo{
+					width: 75px;
+					height: 75px;
+					margin: 12.5px 0 12.5px 75px;
+					float: left;
+				}
+					#logo img{
+						width: 75px;
+						height: 75px;
+					}
+				#title{
+					width: 170px;
+					height: 60px;
+					float: left;
+					margin: 17px 0 12.5px 0;
+					/*background: linear-gradient(to right,red, orange,yellow,skyblue,rgb(70, 144, 218),rgb(19, 115, 211));*/
+				}
+					#title p:first-child{
+						color: white;
+						text-align: justify;
+						text-transform: uppercase;
+						font: bolder 40px courier;
+						margin: 0;
+						padding: 0;
+						text-shadow:2.5px 2.5px 2.5px rgb(86, 191, 70),5px 5px 2.5px rgb(126, 241, 178);
+					}
+					#title p:last-child{
+						color: white;
+						text-align: center;
+						text-transform: uppercase;
+						font: bolder 15px courier;
+						margin: 0;
+						padding: 0 0 0 2px;
+						letter-spacing: 13px;
+						text-shadow:0.9375px 0.93752px 0.6px rgb(86, 191, 70),1.875px 1.875px 1px rgb(126, 241, 178);
+					}
+				#search{
+					width: 500px;
+					height: 50px;
+					background: white;
+					border-top: solid 1px hsl(96, 49%, 78%);
+					border-bottom: solid 1px hsl(96, 49%, 78%);
+					border-left: solid 1px hsl(96, 49%, 78%);
+					float: left;
+					margin: 25px 0 25px 50px;
+					border-radius: 5px 0 0 5px;
+					box-shadow:   1px 1px 9px 1px hsl(96, 38%, 49%);
+				}
+					#search p{
+						margin: 15px 15px;
+						color: rgb(209, 207, 207);
+					}
+				#search-button{
+					width: 100px;
+					height: 50px;
+					background: hsl(97, 31%, 58%);
+					border-top: solid 1px hsl(96, 49%, 78%);
+					border-bottom: solid 1px hsl(96, 49%, 78%);
+					border-right: solid 1px hsl(96, 49%, 78%);
+					float: left;
+					margin: 25px 0 25px 0;
+					border-radius:0 5px 5px 0;
+					box-shadow:   1px 1px 9px 1px hsl(96, 38%, 49%);
+				}
+					#search-button p{
+						margin: 12.5px 10px;
+						color: white;
+						font:bold 100% Courier New, 'Courier', monospace;
+					}
+				#user{
+					width: 170px;
+					height: 50px;
+					float: left;
+					margin: 25px 0px 25px 20px;
+				}		
+					#userlogo{
+						width: 50px;
+						height: 50px;
+						float: left;
+					}	
+						#userlogo img{
+							width: 30px;
+							height: 30px;
+							margin: 10px;
+						}	
+					#username{
+						width: 120px;
+						height: 50px;
+						float: left;
+					}
+						#username p{
+							text-transform: capitalize;
+							text-align: left;
+							display: block;
+							font:bold 100% Courier New, 'Courier', monospace;
+							color:rgb(238, 238, 156);
+						}
+				#order{
+					width: 120px;
+					height: 50px;
+					float: left;
+					margin: 25px 0px 25px 25px;
+				}
+					#order p{
+						text-transform: capitalize;
+							text-align: left;
+							display: block;
+							font:bold 100% Courier New, 'Courier', monospace;
+							color:rgb(238, 238, 156);
+							margin-left: 10px;
+					}
+				#cart{
+					width: 100px;
+					height: 50px;
+					float: left;
+					margin: 25px 0px 25px 25px;
+				}
+					#cart img{
+						width: 30px;
+						height: 30px;
+						margin: 10px;
+						float: left;
+					}
+					#cart p{
+						text-transform: capitalize;
+						text-align: left;
+						display: block;
+						font:bold 100% Courier New, 'Courier', monospace;
+						color:rgb(238, 238, 156);
+						float: left;
+					}
+			#slide{
+				width: 1519px;
+				height: 500px;
+
+			}
+				#slide img{
+					width: 1419px;
+					height: 450px;
+					margin: 25px 50px;
+					box-shadow: 1px 1px 10px 5px #555555;
+				}
+				#slide img:hover{
+					box-shadow: 1px 1px 10px 5px #111111;
+				}
+				#slide a:last-child:link, #slide a:last-child:visited{
+					padding: 20px 40px;
+					background: #111111;
+					color: rgb(238, 238, 156);
+					position: relative;
+					bottom: 150px;
+					left: 800px;
+					font:bold 150% Courier New, 'Courier', monospace;
+				}#slide a:last-child:hover{
+					background: rgb(0, 0, 0);
+				}#slide a:last-child:active{
+					background: #111111;
+				}
+			#specials{
+				width: 1519px;
+				height: 1040px;
+			}	
+				#mspecials{
+					width: 1519px;
+					height: 60px;
+					float: left;
+					background: #111111;
+				}
+					#mspecials p{
+                        width: 100%;
+						color: rgb(238, 238, 156);
+						margin: 15px 0;
+						padding: 0;
+						font:bolder 30px courier,monospace;
+						text-align: center;
+						float: left;
+						text-shadow: 2px 2px 2px hsl(97, 31%, 58%);
+					}
+				#mspecials2{
+					width: 1519px;
+					height: 560px;
+					float: left;
+				}	
+				.mspecials{
+					width: 400px;
+					height: 280px;
+					margin: 20px 53.16px 25px 53.16px;
+					float: left;
+					border-radius: 5px;
+				}
+					.mspecials img{
+					width: 300px;
+					height: 210px;
+					margin: 0 50px 20px 50px;
+					float: left;
+					border-radius: 5px;
+					box-shadow: 1px 1px 10px 5px #555555;
+					transition: transform 1s;
+					}
+					.mspecials img:hover{
+						transform: scale(1.05,1.05);
+					}
+					.mspecials p{
+						color: rgb(0, 0, 0);
+						text-align: center;
+						font: bold 100% courier,monospace;
+					}
+					.mspecials p:last-child{
+						color: rgb(101, 101, 101);
+						text-align: center;
+						font: bold 100% courier,monospace;
+					}
+			#explore{
+				width: 1519px;
+				height: 60px;
+				background: #111111;
+			}
+				#explore p{
+					float: left;
+					width: 100%;
+					text-align: center;
+					color: rgb(238, 238, 156);
+					font: bold 30px courier,monospace;
+					margin: 15px 0 0 0;
+					text-shadow: 2px 2px 3px hsl(97, 31%, 58%);
+				}
+			#products{
+				width: 1519px;
+				height: 217px;
+				background: hsl(97, 31%, 58%);
+				border-bottom: solid 1px #111111;
+			}
+				.products{
+					width: 217px;
+					height: 217px;
+					float: left;
+					overflow: hidden;
+					position: relative;
+				}
+                .products:nth-child(5) img{
+                    display:none;
+                }
+				.products img{
+					width: 100%;
+					height: 100%;
+					transition: transform 1s;
+					opacity: 0.5;
+				}
+				.products a:hover img{
+					transform: scale(1.1,1.1);
+				}
+					.details{
+						width: 100%;
+						text-align: center;
+						font:bold 30px courier,monospace;
+						position: absolute;
+						top: 93.5px;
+						color: #111111;
+					transition: transform 2s;
+					}
+                    .products:nth-child(5) .details{
+                        color: rgb(238, 238, 156);
+                    }
+			#footer{
+				width: 1519px;
+				height: 400px;
+				background:#111111;
+			}
+				#f1{
+					width: 1419px;
+					height: 275px;
+					margin: 50px 50px 0px 50px;
+					border-bottom:solid 1px rgb(238, 238, 156);
+					float: left;
+				}
+					#f11{
+						width: 250px;
+						height: 275px;
+						float: left;
+					}
+					#f11 p{
+						width: 100px;
+						color: rgb(255, 255, 255);
+						border-bottom: solid 1px rgb(238, 238, 156);
+						text-align: center;
+						margin: 0 auto;
+						font: bold 125% courier,monospace;
+						padding: 10px 30px;
+					}
+						#f11 ul{
+							margin: 0;
+							padding: 0;
+							list-style: none;
+							border-right: solid 1px rgb(238, 238, 156);
+						}
+						#f11 ul li a:link, #f11 ul li a:visited{
+							color: rgb(238, 238, 156);
+							text-decoration: none;
+							padding: 10px 30px;
+							display: block;
+							text-align: center;
+							font: bold 100% courier,monospace;
+							transition: transform 1s;
+						}
+						#f11 ul li a:hover{
+							transform: scale(1.1,1.1);
+						}
+					#f12{
+						width: 350px;
+						height: 275px;
+						float: left;
+					}
+						#f12 a:link, #f12 a:visited{
+							text-decoration: none;
+							color: rgb(238, 238, 156);
+						}
+						#f123 p{
+							transition: transform 1s;
+						}
+						#f123 p:hover{
+							transform: translateX(5px);
+						}
+						#f121{
+							width:350px;
+							height: 150px;
+							float: left;
+						}
+						#f121 h4{
+							width: 300px;
+							margin: 10px 0 10px 0;
+							text-indent: 5px;
+							font: bold 20px courier,monospace;
+							color: rgb(255, 255, 255);
+						}
+						#f121 p{
+							color: rgb(238, 238, 156);
+							margin:0 0 0 20px;
+							font: bold 15px courier,monospace;
+						}
+						.f122{
+							width: 0;
+							height: 0;
+							border-left:solid rgb(238, 238, 156) 7px;
+							border-right: none;
+							border-bottom: solid 10px transparent;
+							border-top: solid 10px transparent;
+							float: left;
+							margin-left: 5px;
+						}
+						#f123{
+							width:350px;
+							height: 125px;
+							float: left;
+						}
+						#f123 h4{
+							width: 300px;
+							margin: 10px 0 10px 0;
+							text-indent: 5px;
+							font: bold 20px courier,monospace;
+							color: rgb(255, 255, 255);
+						}
+						#f123 p{
+							color: rgb(238, 238, 156);
+							margin:0 0 10px 20px;
+							font: bold 15px courier,monospace;
+						}
+					#f13{
+						width: 500px;
+						height: 275px;
+						float: left;
+					}
+						#f13 p:first-child{
+							color: rgb(238, 238, 156);
+							width: 120px;
+							border-bottom: solid 1px white;
+							text-align: center;
+							font: bold 20px courier,monospace;
+							position: relative;
+							left: 160px;
+							padding: 0px 30px 10px 30px;
+						}
+						#f13 a{
+							color: rgb(238, 238, 156);
+						}
+						#f13 p:nth-child(2){
+							color: rgb(238, 238, 156);
+							text-align: justify;
+							font: bold 15px courier,monospace;
+							padding-left: 10px;
+							padding-right: 10px;
+							padding-bottom: 10px;
+							margin: 0;
+						}
+						#f13 p:nth-child(3){
+							margin-top: 0;
+							color: rgb(238, 238, 156);
+							font: bold 20px courier,monospace;
+							text-align: center;
+							padding-left: 10px;
+							margin: 0;
+
+						}
+						#f13 img:first-child{
+							width: 20px;
+							height: 20px;
+							margin: 20px 0 0 10px;
+						}
+						#f13 img:last-child{
+							width: 50px;
+							height: 20px;
+							margin: 20px 0 0 10px;
+						}
+							#f131{
+								width: 200px;
+								height: 137.5px;
+								background: red;
+								position: relative;
+								left: 60%;
+								float: left;
+							}
+					#f14{
+						width: 319px;
+						height: 235px;
+						float: left;
+						padding-top: 40px;
+					}
+						#f14 p{
+							color: rgb(238, 238, 156);
+							font: bold 20px courier,monospace;
+							text-align: center;
+							border-left: solid 1px rgb(238, 238, 156);
+							margin: 0;
+							height: 40px;
+						}
+						#f14 a{
+							color: rgb(238, 238, 156);
+						}
+				#f2{
+					width: 1419px;
+					height: 74px;
+					margin: 0 50px;
+					float: left;
+				}
+					#f2  p{
+						width: 100%;
+						margin-top: 27.5px;
+						margin-bottom: 0;
+						color: rgb(238, 238, 156);
+						text-align: center;
+						font: bold 100% courier,monospace;
+					}
+		</style>
+	</head>
+	<body>
+		<div id="main">
+		<div id="top">
+			<a href="index.html">
+				<div id="logo">
+					<img src="logo.png"/>
+				</div>
+				<div id="title">
+					<p>ICY-HOT</p>
+					<p>ICECREAM</p>
+				</div>
+			</a>
+				<div id="search">
+					<p>Search produtcs & flavours</p>
+				</div>
+				<div id="search-button">
+					<p>🔍Search</p>
+				</div>
+				<div id="user">
+					<a href="profile.html">
+						<div id="userlogo">
+							<img src="user.png"/>
+						</div>
+						<div id="username">
+							<p>User Profile</p>
+						</div>
+					</a>
+				</div>
+				<div id="order">
+					<a href="profile.html#yo">
+					<p>Your Orders</p>
+					</a>
+				</div>
+				<div id="cart">
+					<a href="profile.html#yc">
+					<img src="cart.png"/>
+					<p>Cart</p>
+					</a>
+				</div>
+		</div>
+		<div id="slide">
+			<a href="#"><img src="AJB.png"/></a>
+			<a href="#">Try Now</a>
+		</div>
+		<div id="specials">
+			<div id="mspecials">
+				<p>Sundae</p>
+			</div>
+			<div id="mspecials2">
+				<div class="mspecials">
+					<a href="des.html">
+					<img src="gulabvan.jpg"/>
+					<p>
+						<b>Vanilla with Gulab Jamun </b>
+					</p>
+					<p>
+						Starting @ ₹150/-
+					</p>
+					</a>
+				</div>
+				<div class="mspecials">
+					<a href="des.html">
+					<img src="icy-oats.webp"/>
+					<p>
+						<b>Icy Oats </b>
+					</p>
+					<p>
+						Starting @₹120/-
+					</p>
+					</a>
+				</div>
+				<div class="mspecials">
+					<a href="des.html">
+					<img src="french.webp"/>
+					<p>
+						<b>French Fries Sundae</b>
+					</p>
+					<p>
+						Starting @₹200/-
+					</p>
+					</a>
+				</div>
+				<div class="mspecials">
+					<a href="des.html">
+					<img src="french.webp"/>
+					<p>
+						<b>French Fries Sundae</b>
+					</p>
+					<p>
+						Starting @₹200/-
+					</p>
+					</a>
+				</div>
+				<div class="mspecials">
+					<a href="des.html">
+					<img src="french.webp"/>
+					<p>
+						<b>French Fries Sundae</b>
+					</p>
+					<p>
+						Starting @₹200/-
+					</p>
+					</a>
+				</div>
+				<div class="mspecials">
+					<a href="des.html">
+					<img src="french.webp"/>
+					<p>
+						<b>French Fries Sundae</b>
+					</p>
+					<p>
+						Starting @₹200/-
+					</p>
+					</a>
+				</div>
+				<div class="mspecials">
+					<a href="des.html">
+					<img src="french.webp"/>
+					<p>
+						<b>French Fries Sundae</b>
+					</p>
+					<p>
+						Starting @₹200/-
+					</p>
+					</a>
+				</div>
+				<div class="mspecials">
+					<a href="des.html">
+					<img src="french.webp"/>
+					<p>
+						<b>French Fries Sundae</b>
+					</p>
+					<p>
+						Starting @₹200/-
+					</p>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div id="explore">
+			<p>Explore More Products</p>
+		</div>
+		<div id="products">
+			<div class="products">
+				<a href="cone.html">
+						<img src="conelist.jpg"/>
+					<div class="details">
+						Cone
+					</div>
+				</a>
+			</div>
+			<div class="products">
+				<a href="cb.html">
+						<img src="chocobar.jpg"/>
+					<div class="details">
+						Choco<br>Bar
+					</div>
+				</a>
+			</div>
+			<div class="products">
+				<a href="cup.html">
+						<img src="cup.jpg"/>
+					<div class="details">
+						Cup
+					</div>
+				</a>
+			</div>
+			<div class="products">
+				<a href="ice.html">
+						<img src="ice-candy.jpg"/>
+					<div class="details">
+						Ice<br>Candy
+					</div>
+				</a>
+			</div>
+			<div class="products">
+				
+						<img src="sundae.jpg"/>
+					<div class="details">
+						Sundae
+					</div>
+				
+			</div>
+			<div class="products">
+				<a href="combo.html">
+						<img src="combo.webp"/>
+					<div class="details">
+						Combo
+					</div>
+				</a>
+			</div>
+			<div class="products">
+				<a href="block.html">
+						<img src="block.png"/>
+					<div class="details">
+						Blocks
+					</div>
+				</a>
+			</div>
+		</div>
+		<div id="footer">
+			<div id="f1">
+				<div id="f12">
+					<div id="f121">
+						<h4><div class="f122"></div>Store Location</h4>
+						<p>ICY-HOT Ice Cream<br>Plot no.-135,Road no.-8;<br>Ramajanam Nagar, Kadma;<br>Jamshedpur, East Singhbhum;<br>Jharkhand-831005</p>
+					</div>
+					<div id="f123">
+						<h4><div class="f122"></div>Contact Us</h4>
+						<p>
+							<a href="tel:6205179152">☏ +91 6205179152</a>
+						</p>
+						<p>
+							<a href="mailto:atulraj7654783307@gmail.com?subject=Query&cc=ardx7654@gmail.com">✉ atulraj7654783307@gmail.com</a>
+						</p>
+					</div>
+				</div>
+				<div id="f11">
+					<p>HELP</p>
+                    <ul>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="faq.html">Shipping & Delivery</a></li>
+                        <li><a href="faq.html">Privacy Policy</a></li>
+                        <li><a href="faq.html">Terms & Conditions</a></li>
+                        <li><a href="faq.html">Cancellation</a></li>
+                    </ul>
+				</div>
+				<div id="f13">
+					<p><a href="about.html">About Us</a></p>
+					<p><br></b>Established in 1999, ICY-HOT Ice Cream store is bounded to provide you what it is known for- a variety of delicious ice cream produtcs in a healthy way. We select fresh ingredients for manufacturing  of your favorite ice cream flavours. ICY-HOT Ice Cream is FSSAI certified company.......<a href="about.html" target="_blank"><font color="lightgreen">Know More ></font></a></p>
+					<p><img src="veg.jpg"/><img src="fssai.png"/> 10012345678910</p>
+				</div>
+				<div id="f14">
+					<p></p>
+					<p><br>Designed & developed by:</p>
+					<p><br><a href="mailto:atulraj7654783307@gmail.com">Atulya Raj</a></p>
+					<p></p>
+					<p></p>
+				</div>
+			</div>
+			<div id="f2">
+				<p>Copyright © 2021 ICY-HOT Ice Cream, All Rights Reserved.</p>
+			</div>
+		</div>
+	</body>
+</html>

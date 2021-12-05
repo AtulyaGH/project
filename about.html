@@ -1,0 +1,764 @@
+<html>
+	<head>
+		<title>ICY-HOT at a Glance | ICY-HOT Ice-cream</title>
+		<style type="text/css">
+			body{
+				margin: 0;
+			}
+			a{
+				
+				text-decoration: none;
+				color:#000;
+			}
+			#main{
+				width: 1519px;
+				height: auto;
+				background:hsl(97, 31%, 58%)  url('snow.png') fixed no-repeat;
+			}
+			#top{
+				width: 1519px;
+				height: 100px;
+				background: #111111;
+				position: sticky;
+				top: 0;
+				z-index: 1000;
+				}
+				#logo{
+					width: 75px;
+					height: 75px;
+					margin: 12.5px 0 12.5px 75px;
+					float: left;
+				}
+					#logo img{
+						width: 75px;
+						height: 75px;
+					}
+				#title{
+					width: 170px;
+					height: 60px;
+					float: left;
+					margin: 17px 0 12.5px 0;
+					/*background: linear-gradient(to right,red, orange,yellow,skyblue,rgb(70, 144, 218),rgb(19, 115, 211));*/
+				}
+					#title p:first-child{
+						color: white;
+						text-align: justify;
+						text-transform: uppercase;
+						font: bolder 40px courier;
+						margin: 0;
+						padding: 0;
+						text-shadow:2.5px 2.5px 2.5px rgb(86, 191, 70),5px 5px 2.5px rgb(126, 241, 178);
+					}
+					#title p:last-child{
+						color: white;
+						text-align: center;
+						text-transform: uppercase;
+						font: bolder 15px courier;
+						margin: 0;
+						padding: 0 0 0 2px;
+						letter-spacing: 13px;
+						text-shadow:0.9375px 0.93752px 0.6px rgb(86, 191, 70),1.875px 1.875px 1px rgb(126, 241, 178);
+					}
+				#search{
+					width: 500px;
+					height: 50px;
+					background: white;
+					border-top: solid 1px hsl(96, 49%, 78%);
+					border-bottom: solid 1px hsl(96, 49%, 78%);
+					border-left: solid 1px hsl(96, 49%, 78%);
+					float: left;
+					margin: 25px 0 25px 50px;
+					border-radius: 5px 0 0 5px;
+					box-shadow:   1px 1px 9px 1px hsl(96, 38%, 49%);
+				}
+					#search p{
+						margin: 15px 15px;
+						color: rgb(209, 207, 207);
+					}
+				#search-button{
+					width: 100px;
+					height: 50px;
+					background: hsl(97, 31%, 58%);
+					border-top: solid 1px hsl(96, 49%, 78%);
+					border-bottom: solid 1px hsl(96, 49%, 78%);
+					border-right: solid 1px hsl(96, 49%, 78%);
+					float: left;
+					margin: 25px 0 25px 0;
+					border-radius:0 5px 5px 0;
+					box-shadow:   1px 1px 9px 1px hsl(96, 38%, 49%);
+				}
+					#search-button p{
+						margin: 12.5px 10px;
+						color: white;
+						font:bold 100% Courier New, 'Courier', monospace;
+					}
+				#user{
+					width: 170px;
+					height: 50px;
+					float: left;
+					margin: 25px 0px 25px 20px;
+				}		
+					#userlogo{
+						width: 50px;
+						height: 50px;
+						/*background: cyan;*/
+						float: left;
+					}	
+						#userlogo img{
+							width: 30px;
+							height: 30px;
+							margin: 10px;
+						}	
+					#username{
+						width: 120px;
+						height: 50px;
+						/*background: cyan;*/
+						float: left;
+					}
+						#username p{
+							text-transform: capitalize;
+							text-align: left;
+							display: block;
+							font:bold 100% Courier New, 'Courier', monospace;
+							color:rgb(238, 238, 156);
+						}
+				#order{
+					width: 120px;
+					height: 50px;
+					float: left;
+					margin: 25px 0px 25px 25px;
+				}
+					#order p{
+						text-transform: capitalize;
+							text-align: left;
+							display: block;
+							font:bold 100% Courier New, 'Courier', monospace;
+							color:rgb(238, 238, 156);
+							margin-left: 10px;
+					}
+				#cart{
+					width: 100px;
+					height: 50px;
+					float: left;
+					margin: 25px 0px 25px 25px;
+				}
+					#cart img{
+						width: 30px;
+						height: 30px;
+						margin: 10px;
+						float: left;
+					}
+					#cart p{
+						text-transform: capitalize;
+						text-align: left;
+						display: block;
+						font:bold 100% Courier New, 'Courier', monospace;
+						color:rgb(238, 238, 156);
+						float: left;
+					}
+			@keyframes a1{
+				0%{
+					background: url('morebg.jpg') no-repeat;
+				background-size: cover;
+				}
+				20%{
+					background:url('bg1.jpg') no-repeat;
+				background-size: cover; 
+				}
+				40%{
+					background:url('bg5.jpg') no-repeat;
+				background-size: cover; 
+				}
+				60%{
+					background:url('bg2.jpg') no-repeat;
+				background-size: cover;
+				}
+				80%{
+					background:url('bg3.jpg') no-repeat;
+				background-size: cover;
+				}
+				100%{
+					background:url('bg4.jpg') no-repeat;
+				background-size: cover;
+				}
+			}
+			#about{
+				width: 1519px;
+				height: 600px;
+				background: url('morebg.jpg') rgba(255, 255, 255, 0.5) no-repeat;
+				background-size: cover;
+				animation: a1 24s infinite;
+				}
+				#head{
+					width: 1019px;
+					height: 400px;
+					position: relative;
+					border:solid 10px #111111;
+					top: 90px;
+					left: 240px;
+				}
+				@keyframes h1{
+					0%{
+						transform: translatex(-100px);
+					}
+					100%{
+						transform: translatex(0px);
+					}
+				}
+					#head h1{
+						width: 100%;
+						text-align: center;
+						color: #111111;
+						font-size: 100px;
+						font-family: 'Dancing Script', cursive;
+						text-shadow:  4px 4px 4px hsl(97, 62%, 57%);
+						float: left;
+						margin-bottom: 50px;
+						animation: h1 2s 1;
+					}
+				@keyframes h2{
+					0%{
+						transform: translatex(100px);
+					}
+					100%{
+						transform: translatex(0px);
+					}
+				}
+					#head p{
+						width: 100%;
+						text-align: center;
+						color: #111111;
+						font-size: 50px;
+						font-family: 'Dancing Script', cursive;
+						text-shadow:  4px 4px 4px hsl(97, 53%, 55%);
+						float: left;
+						margin-top: 0px;
+						font-weight: bolder;
+						animation: h2 2s 1;
+					}
+			#ahead{
+				width: 1519px;
+				height: 1500px;
+			}
+				#ah1{
+					width: 1019px;
+					height: 300;
+					position: relative;
+					left: 250px;
+					top: 100px;
+				}
+				@keyframes ah1{
+					0%{
+						transform: translatex(-100px);
+					}
+					100%{
+						transform: translatex(0px);
+					}
+				}	
+					#ah11{
+						width: 400px;
+						height: 300px;
+						float: left;
+						animation: ah1 2s 1;
+					}
+						#ah11 img{
+							width: 100%;
+							height: 100%;
+						}
+				@keyframes ah2{
+					0%{
+						transform: translatex(100px);
+					}
+					100%{
+						transform: translatex(0px);
+					}
+				}
+					#ah12{
+						width: 619px;
+						height: 300px;
+						background: #a21414;
+						float: left;
+						animation: ah2 2s 1;
+					}
+					#ah12 h3{
+						color: hsl(96, 38%, 49%);
+						font-family: 'Dancing Script', cursive;
+						background: #111111;
+						display: block;
+						font-weight: 700;
+						font-size: 40px;
+						text-align: left;
+						padding-left: 20px;
+						margin-bottom: 0;
+					}
+					#ah12 p{
+						color: #111111;
+						font: 900 20px courier,monospace;
+						padding: 20px;
+						display: block;
+						text-align: justify;
+						margin: 0;
+					}
+				#ah2{
+					width: 1019px;
+					height: 300;
+					position: relative;
+					left: 250px;
+					top: 300px;
+				}
+					#ah21{
+						width: 619px;
+						height: 300px;
+						background: #a21414;
+						float: left;
+						animation: ah1 2s 1;
+					}
+					#ah21 h3{
+						color: hsl(96, 38%, 49%);
+						font-family: 'Dancing Script', cursive;
+						background: #111111;
+						display: block;
+						font-weight: 700;
+						font-size: 40px;
+						text-align: right;
+						padding-right: 20px;
+						margin-bottom: 0;
+					}
+					#ah21 p{
+						color: #111111;
+						font: 900 20px courier,monospace;
+						padding: 20px;
+						display: block;
+						text-align: justify;
+						margin: 0;
+					}	
+					#ah22{
+						width: 400px;
+						height: 300px;
+						float: left;
+						animation: ah2 2s 1;
+					}
+						#ah22 img{
+							width: 100%;
+							height: 100%;
+						}
+				#ah3{
+					width: 1019px;
+					height: 300;
+					position: relative;
+					left: 250px;
+					top: 500px;
+				}	
+					#ah31{
+						width: 400px;
+						height: 300px;
+						float: left;
+						animation: ah1 2s 1;
+					}
+						#ah31 img{
+							width: 100%;
+							height: 100%;
+						}
+					#ah32{
+						width: 619px;
+						height: 300px;
+						background: #a21414;
+						float: left;
+						animation: ah2 2s 1;
+					}
+					#ah32 h3{
+						color: hsl(96, 38%, 49%);
+						font-family: 'Dancing Script', cursive;
+						background: #111111;
+						display: block;
+						font-weight: 700;
+						font-size: 40px;
+						text-align: left;
+						padding-left: 20px;
+						margin-bottom: 0;
+					}
+					#ah32 p{
+						color: #111111;
+						font: 900 20px courier,monospace;
+						padding: 20px;
+						display: block;
+						text-align: justify;
+						margin: 0;
+					}
+			#social{
+				width: 919px;
+				height: 220px;
+				border-top: solid 100px transparent;
+				border-left: solid 300px transparent;
+				border-right: solid 300px transparent;
+				border-bottom: solid 100px #111111;
+			}
+				#s1{
+					width: 919px;
+					height: 100px;
+				}
+					#s1 p{
+						text-align: center;
+						font-family: 'Dancing Script', cursive;
+						font-size: 90px;
+						font-weight: 700;
+						color: #111111;
+						text-shadow: 4px 4px 4px hsl(97, 62%, 57%);
+						margin-top: -60px;
+						margin-bottom: 0;
+						padding: 0;
+					}
+				#s2{
+					width: 919px;
+					height: 200px;
+				}
+					.s2{
+						width: 306.33px;
+						height: 200px;
+						float: left;
+						position: relative;
+					}
+					.s2 img{
+						width: 150px;
+						height: 150px;
+						position: absolute;
+						bottom: 0px;
+						left: 78.16px;
+						box-shadow: hsl(97, 53%, 55%) 0px 13px 27px -5px, hsl(96, 49%, 78%) 0px 8px 16px -8px;
+						transition: transform 2s;
+						margin-bottom: -20px;
+						border-radius: 20px;
+					}
+					.s2 img:hover{
+						transform: scale(1.1,1.1);
+						box-shadow: hsl(97, 53%, 55%) 0px 20px 30px -10px;
+					}
+			#footer{
+				width: 1519px;
+				height: 400px;
+				background:#111111;
+				border-top: solid 1px hsl(97, 53%, 55%);
+			}
+				#f1{
+					width: 1419px;
+					height: 275px;
+					margin: 50px 50px 0px 50px;
+					border-bottom:solid 1px rgb(238, 238, 156);
+					float: left;
+				}
+					#f11{
+						width: 250px;
+						height: 275px;
+						float: left;
+					}
+					#f11 p{
+						width: 100px;
+						color: rgb(255, 255, 255);
+						border-bottom: solid 1px rgb(238, 238, 156);
+						text-align: center;
+						margin: 0 auto;
+						font: bold 125% courier,monospace;
+						padding: 10px 30px;
+					}
+						#f11 ul{
+							margin: 0;
+							padding: 0;
+							list-style: none;
+							border-right: solid 1px rgb(238, 238, 156);
+						}
+						#f11 ul li a:link, #f11 ul li a:visited{
+							color: rgb(238, 238, 156);
+							text-decoration: none;
+							padding: 10px 30px;
+							display: block;
+							text-align: center;
+						font: bold 100% courier,monospace;
+						}
+					#f12{
+						width: 350px;
+						height: 275px;
+						float: left;
+					}
+						#f12 a:link, #f12 a:visited{
+							text-decoration: none;
+							color: rgb(238, 238, 156);
+						}
+						#f121{
+							width:350px;
+							height: 150px;
+							float: left;
+						}
+						#f121 h4{
+							width: 300px;
+							margin: 10px 0 10px 0;
+							text-indent: 5px;
+							font: bold 20px courier,monospace;
+							color: rgb(255, 255, 255);
+						}
+						#f121 p{
+							color: rgb(238, 238, 156);
+							margin:0 0 0 20px;
+							font: bold 15px courier,monospace;
+						}
+						.f122{
+							width: 0;
+							height: 0;
+							border-left:solid rgb(238, 238, 156) 7px;
+							border-right: none;
+							border-bottom: solid 10px transparent;
+							border-top: solid 10px transparent;
+							float: left;
+							margin-left: 5px;
+						}
+						#f123{
+							width:350px;
+							height: 125px;
+							float: left;
+						}
+						#f123 h4{
+							width: 300px;
+							margin: 10px 0 10px 0;
+							text-indent: 5px;
+							font: bold 20px courier,monospace;
+							color: rgb(255, 255, 255);
+						}
+						#f123 p{
+							color: rgb(238, 238, 156);
+							margin:0 0 10px 20px;
+							font: bold 15px courier,monospace;
+						}
+					#f13{
+						width: 500px;
+						height: 275px;
+						float: left;
+					}
+						#f13 p:first-child{
+							color: rgb(238, 238, 156);
+							width: 120px;
+							border-bottom: solid 1px white;
+							text-align: center;
+							font: bold 20px courier,monospace;
+							position: relative;
+							left: 160px;
+							padding: 0px 30px 10px 30px;
+						}
+						#f13 p:nth-child(2){
+							color: rgb(238, 238, 156);
+							text-align: justify;
+							font: bold 15px courier,monospace;
+							padding-left: 10px;
+							padding-right: 10px;
+							padding-bottom: 10px;
+							margin: 0;
+						}
+						#f13 p:nth-child(3){
+							margin-top: 0;
+							color: rgb(238, 238, 156);
+							font: bold 20px courier,monospace;
+							text-align: center;
+							padding-left: 10px;
+							margin: 0;
+
+						}
+						#f13 img:first-child{
+							width: 20px;
+							height: 20px;
+							margin: 20px 0 0 10px;
+						}
+						#f13 img:last-child{
+							width: 50px;
+							height: 20px;
+							margin: 20px 0 0 10px;
+						}
+							#f131{
+								width: 200px;
+								height: 137.5px;
+								background: red;
+								position: relative;
+								left: 60%;
+								float: left;
+							}
+					#f14{
+						width: 319px;
+						height: 235px;
+						float: left;
+						padding-top: 40px;
+					}
+						#f14 p{
+							color: rgb(238, 238, 156);
+							font: bold 20px courier,monospace;
+							text-align: center;
+							border-left: solid 1px rgb(238, 238, 156);
+							margin: 0;
+							height: 40px;
+						}
+						#f14 a{
+							color: rgb(238, 238, 156);
+						}
+				#f2{
+					width: 1419px;
+					height: 74px;
+					margin: 0 50px;
+					float: left;
+				}
+					#f2  p{
+						width: 100%;
+						margin-top: 27.5px;
+						margin-bottom: 0;
+						color: rgb(238, 238, 156);
+						text-align: center;
+						font: bold 100% courier,monospace;
+					}
+        </style>
+		<link rel="stylesheet" type="text/css" href="css/font-awesome.css"/> 
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    </head>
+                <body>
+                    <div id="main">
+                        <div id="top">
+                            <a href="index.html">
+                                <div id="logo">
+                                    <img src="logo.png"/>
+                                </div>
+                                 <div id="title">
+                                    <p>ICY-HOT</p>
+                                    <p>ICECREAM</p>
+                                </div>
+                            </a>
+                            <div id="search">
+                                <p>Search produtcs & flavours</p>
+                            </div>
+                            <div id="search-button">
+                                <p>🔍Search</p>
+                            </div>
+                            <div id="user">
+                                <a href="profile.html">
+                                    <div id="userlogo">
+                                        <img src="user.png"/>
+                                    </div>
+                                    <div id="username">
+                                        <p>User Profile</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div id="order">
+                                <a href="profile.html#yo">
+                                <p>Your Orders</p>
+                                </a>
+                            </div>
+                            <div id="cart">
+                                <a href="profile.html#yc">
+                                <img src="cart.png"/>
+                                <p>Cart</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div id="about">
+							<div id="head">
+								<h1>ICY-HOT at a Glance</h1>
+								<p>Pioneering excellent flavours since 1999</p>
+							</div>
+						</div>
+						<div id="ahead">
+							<div id="ah1">
+								<div id="ah11">
+									<img src="cb.jpg"/>
+								</div>
+								<div id="ah12">
+									<h3>About Us</h3>
+									<p>In 1999, ICY-HOT opened the doors of it's very first store. A store with a mission. A mission to create, natural food, avoiding the obscure chemicals, additives & preservatives common to so much of the 'prepaared' and 'fast' food available in the market today.</p>
+								</div>
+							</div>
+							<div id="ah2">
+								<div id="ah21">
+									<h3>Naturally Authentic </h3>
+									<p>We use the most healthy and natural procedures to process our creams.You won't find 'use by' dates on our fresh products. Our ingredients are 100% organic. We offer our unsold food to charity at the end of each day rather than keeping it to sell the next day.</p>
+								</div>
+								<div id="ah22">
+									<img src="abf.jpg"/>
+								</div>
+							</div>
+							<div id="ah3">
+								<div id="ah31">
+									<img src="ab3.jpg"/>
+								</div>
+								<div id="ah32">
+									<h3>To Your Door</h3>
+									<p>We know that not everyone is able to reach the stores to enjoy our delicious products. So, we have a very fast delivery system that can get to you within an hour even in the remotest are of the city. Orders are vaccum packed & kept inside a mobile refrigerator hence keeps your order fresh & frozen.</p>
+								</div>
+							</div>
+						</div>
+						<div id="social">
+							<div id="s1">
+								<p>Social Links</p>
+							</div>
+							<div id="s2">
+								<div class="s2">
+									<a href="#">
+										<img src="fb.png"/>
+									</a>
+								</div>
+								<div class="s2">
+									<a href="#">
+										<img src="ig.png"/>
+									</a>
+								</div>
+								<div class="s2">
+									<a href="#">
+										<img src="twit.png"/>
+									</a>
+								</div>
+							</div>
+						</div>
+                        <div id="footer">
+                            <div id="f1">
+                                <div id="f12">
+                                    <div id="f121">
+                                        <h4><div class="f122"></div>Store Location</h4>
+                                        <p>ICY-HOT Ice Cream<br>Plot no.-135,Road no.-8;<br>Ramajanam Nagar, Kadma;<br>Jamshedpur, East Singhbhum;<br>Jharkhand-831005</p>
+                                    </div>
+                                    <div id="f123">
+                                        <h4><div class="f122"></div>Contact Us</h4>
+                                        <p>
+                                            <a href="tel:6205179152">☏ +91 6205179152</a>
+                                        </p>
+                                        <p>
+                                            <a href="mailto:atulraj7654783307@gmail.com?subject=Query&cc=ardx7654@gmail.com">✉ atulraj7654783307@gmail.com</a>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div id="f11">
+                                    <p>HELP</p>
+									<ul>
+										<li><a href="faq.html">FAQ</a></li>
+										<li><a href="faq.html">Shipping & Delivery</a></li>
+										<li><a href="faq.html">Privacy Policy</a></li>
+										<li><a href="faq.html">Terms & Conditions</a></li>
+										<li><a href="faq.html">Cancellation</a></li>
+									</ul>
+                                </div>
+                                <div id="f13">
+                                    <p>About Us</p>
+                                    <p><br></b>Established in 1999, ICY-HOT Ice Cream store is bounded to provide you what it is known for- a variety of delicious ice cream produtcs in a healthy way. We select fresh ingredients for manufacturing  of your favorite ice cream flavours. ICY-HOT Ice Cream is FSSAI certified company.</p>
+                                    <p><img src="veg.jpg"/><img src="fssai.png"/> 10012345678910</p>
+                                </div>
+                                <div id="f14">
+                                    <p></p>
+                                    <p><br>Designed & developed by:</p>
+                                    <p><br><a href="mailto:atulraj7654783307@gmail.com">Atulya Raj</a></p>
+                                    <p></p>
+                                    <p></p>
+                                </div>
+                            </div>
+                            <div id="f2">
+                                <p>Copyright © 2021 ICY-HOT Ice Cream, All Rights Reserved.</p>
+                            </div>
+                        </div>
+                    </div>
+                </body>
+            </html>
